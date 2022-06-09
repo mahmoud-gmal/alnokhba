@@ -1,0 +1,245 @@
+/* @media (min-width:991px) {} */
+
+/* @media (max-width:1200px) and (min-width:991px) {} */
+
+/*  Main Breaking Point */
+/* @media (max-width:768px) {} */
+
+/* @media (max-width:425px) {} */
+
+
+
+@media (max-width: 1199.9px) {
+
+    /* Navbar */
+    .navbar_sect .logo {
+        width: 200px;
+    }
+
+    .navbar_sect ul.main_navbar {
+        margin-right: 67px;
+    }
+
+    .navbar_sect ul.main_navbar li {
+        margin-left: 13px;
+        font-size: 15px;
+    }
+
+    /* Start home slider */
+    /* .home_slider_sect .slide_im::before{width: 100%;height: 92%;}
+.home_slider_sect .slide_im img{width: 80%; height: 73%;}
+.home_slider_sect .slide_im::after{  width: 86%;height: 78%;} */
+    /*  End home slider */
+
+}
+
+
+@media (max-width: 991.9px) {
+
+    /* Navbar */
+    .main_navbar {
+        display: none !important;
+    }
+
+    .mob_menu_wrapper.open {
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+        transition: all .4s linear;
+    }
+
+    .btns_wrapper_mobile {
+        display: flex !important;
+        justify-content: end;
+    }
+
+    .btns_wrapper {
+        display: none !important;
+    }
+
+    /* Home Slider */
+    .home_slider_sect {
+        padding: 125px 0;
+    }
+
+    .home_slider_sect .owl-dots {
+        bottom: -42px;
+        margin-top: 0 !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* about section */
+    .ab_im_wrap {
+        margin-bottom: 46px;
+    }
+
+/* footer */
+footer::after{
+    background-position: calc(100% - -4px) calc(100% - -78px);
+}
+
+.footer_copyrights {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.ryad-logo{
+    margin: auto;
+}
+
+}
+
+
+
+@media (max-width:767.9px) {
+
+    /* Start top Header */
+    .top_bar ul {
+        justify-content: center;
+    }
+
+    .top_bar .tpbar_left_wrap {
+        justify-content: center;
+        margin-top: 19px;
+    }
+
+    /* society */
+    .soc_im_wrap {
+        margin-top: 46px;
+    }
+
+    /* stats */
+    .stats {
+        padding: 51px 0 90px;
+    }
+
+    /* media center */
+    .media_center {
+        padding: 0px 0 40px;
+        margin-top: -31px;
+    }
+
+    .media_center .nav {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .media_center .txt_sid {
+        text-align: center !important;
+        margin-top: 25px;
+    }
+
+
+    /* footer */
+    footer{padding-top: 40px;}
+    footer::after {
+        background-position: calc(100% - 28px) calc(100% - -135px);
+    }
+
+}
+
+@media (max-width:575.9px) {
+
+    /* navbar */
+    .mob_menu_wrapper {
+        width: 50%;
+    }
+
+    /* Start features */
+    .feats .special_heading {
+        max-width: 251px;
+        margin: 39px auto;
+    }
+
+    .feats .heading .btn_more {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .feats .heading {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .swiper-button-next::after {
+        left: 10%;
+    }
+
+    .swiper-button-prev::after {
+        right: 10%;
+    }
+
+
+}
+
+
+
+
+@media (max-width:425px) {
+
+
+
+
+    /* Start top Header */
+    .top_bar ul {
+        flex-direction: column;
+    }
+
+    .top_bar ul li:first-child {
+        margin-bottom: 9px;
+    }
+
+    /* End top Header */
+
+    /* Start navbar  */
+    .mob_menu_wrapper {
+        width: 65%;
+    }
+
+    .mob_logo_close .logo_mob {
+        width: 151px;
+    }
+
+    .navbar_sect .logo {
+        width: 200px;
+    }
+
+    .btns_wrapper_mobile .search_icon {
+        margin-left: 14px;
+    }
+
+    /* End navbar  */
+
+
+    /* home slider  */
+
+    .home_slider_sect .slide_im img {
+        width: 78%;
+        height: 56%;
+    }
+
+    .home_slider_sect .slide_im::after {
+        height: 62%;
+    }
+
+    .home_slider_sect .slide_im::before {
+        width: 96%;
+        height: 73%;
+    }
+
+    .special_btn {
+        padding: 13px 21px;
+    }
+
+    .play_btn {
+        padding: 0;
+    }
+
+    /* media center */
+    .media_center .nav .nav-item {
+        padding: 7px 18px;
+        margin: 0;
+    }
+
+
+
+}

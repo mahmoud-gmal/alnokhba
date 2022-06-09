@@ -1,0 +1,38 @@
+https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+
+
+@import url(vendor/custom_bootstrap.css);
+@import url(vendor/owl.carousel.css);
+@import url(vendor/owl.theme.default.min.css);
+@import url(vendor/jquery.fancybox.css);
+@import url(vendor/odometer-theme-default.css);
+@import url(vendor/fontawesome-pro-5.12.0.css);
+@import url(vendor/line-awesome.min.css);
+@import url(vendor/swiper.min.css);
+@import url(vendor/animate.css);
+
+.no-gutters > [class*=col-] {
+    
+}
+
+<!-- structure  -->
+// Abstract files
+@import "abscracts/all";
+
+// Vendor Files
+@import "vendor/bootstrap.scss";
+
+// Core files
+@import "core/all";
+
+// Components
+@import "components/all";
+
+// Layout
+@import "layout/all";
+
+// Sections
+@import "sections/all";
+
+// Pages
+@import "pages/all";

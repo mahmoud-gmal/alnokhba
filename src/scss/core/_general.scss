@@ -1,0 +1,257 @@
+/* Global Styles  */
+  
+  body {
+    direction: rtl;
+    text-align: left;
+    overflow-x: hidden;
+  }
+  
+
+
+  /* General Style Classes */
+.res {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .special_btn {
+    font-family: "GE_Flow_Regular";
+    color: #fff;
+    border-radius: 22px;
+    font-size: 16px;
+    background: transparent linear-gradient(267deg, #532884 0%, var(--thr-color) 100%) 0% 0% no-repeat padding-box;
+    /* height: 48px; */
+    text-align: center;
+    display: inline-block;
+    padding: 13px 23px;
+  }
+  
+  .special_btn:hover {
+    color: #fff;
+    background: transparent linear-gradient(267deg, var(--thr-color) 0%, #532884 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .line_after,
+  .special_heading {
+    position: relative;
+  }
+  
+  .line_after::after,
+  .special_heading::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 1.3px;
+    background: var(--thr-color);
+    bottom: -13px;
+    right: 8px;
+  }
+  
+  .line_after::before,
+  .special_heading::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--thr-color);
+    bottom: -16px;
+    right: 0px;
+    border-radius: 50%
+  }
+  
+  .special_heading {
+    font-family: "GE_Flow_Bold";
+    font-size: 31px;
+    color: var(--sec-color);
+    display: inline-block;
+    margin-bottom: 36px;
+  }
+  
+  .special_heading::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 7px);
+    height: 1.3px;
+    background: var(--thr-color);
+    bottom: -13px;
+    right: 7px;
+  }
+  
+  /* Start Search */
+  .site-search {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    padding: 12px;
+    transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s;
+    -webkit-transition: opacity .5s ease 0.25s, z-index 0s ease 0.75s;
+  }
+  
+  .site-search.open {
+    z-index: 99999999;
+    opacity: 1;
+    transition: opacity .5s, z-index 0s;
+    -webkit-transition: opacity .5s, z-index 0s;
+  }
+  
+  .site-search.open .woocommerce-product-search,
+  .site-search.open .search-form {
+    margin-top: -25px;
+    opacity: 1;
+    transition: margin-top .5s, opacity .5s;
+    -webkit-transition: margin-top .5s, opacity .5s;
+  }
+  
+  .site-search .widget_product_search,
+  .site-search .widget_search {
+    position: relative;
+    padding-top: 0;
+  }
+  
+  .site-search .woocommerce-product-search,
+  .site-search .widget_search .search-form {
+    border: none;
+    width: 50%;
+    margin-top: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: block;
+    padding-top: 0;
+    opacity: 0;
+    transition: margin-top .5s, opacity .5s;
+    -webkit-transition: margin-top .5s, opacity .5s;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+  
+  .site-search .woocommerce-product-search label,
+  .site-search .widget_search .search-form label {
+    display: none;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    transform: translateX(10%);
+  }
+  
+  .site-search .woocommerce-product-search .search-field,
+  .site-search .widget_search .search-form .search-field {
+    color: var(--bg-color);
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--bg-color);
+    font-size: 20px;
+    /*  	font-weight: 900;*/
+    padding: 15px 0;
+    height: auto;
+    margin: 0;
+    outline: none !important;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.15s linear;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    box-shadow: inset 0 0 0 transparent;
+    color: var(--main-color);
+    padding-inline-end: 50px;
+  }
+  
+  .site-search .woocommerce-product-search input[type="submit"],
+  .site-search .widget_search .search-form input[type="submit"] {
+    top: 10px;
+    right: 15px;
+    padding-top: 0 !important;
+    background: none !important;
+    font-size: 0;
+    min-width: 0;
+    padding: 0 !important;
+    z-index: 4;
+    position: absolute;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .site-search .woocommerce-product-search button {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 20px;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--bg-color);
+    padding: 0;
+  }
+  
+  .site-search .woocommerce-product-search .search-field::placeholder {
+    color: var(--bg-color);
+  }
+  
+  .searchForm .btnSearch {
+    box-shadow: none !important;
+    /* margin: 0 25px; */
+    color: #101010;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    border: none !important;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .searchForm .btnSearch i {
+    transition: all 0.6s;
+    color: var(--bg-color);
+  }
+  
+  .site-search-close {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+  }
+  
+  .site-search .close-side i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    z-index: 9;
+  }
+  
+  /* End Search */
+  
+  
+  
